@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2016-4-12 17:44:14 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="db.hibernate.tables.isearch.Cities" table="cities" catalog="isearch">
+        <id name="id" type="java.lang.Integer">
+            <column name="id" />
+            <generator class="identity" />
+        </id>
+        <property name="cityid" type="string">
+            <column name="cityid" length="20" not-null="true" />
+        </property>
+        <property name="city" type="string">
+            <column name="city" length="50" not-null="true" />
+        </property>
+        <property name="provinceid" type="string">
+            <column name="provinceid" length="20" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2016-4-12 17:44:14 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="db.hibernate.tables.isearch.ClickResultSource" table="click_result_source" catalog="isearch">
+        <id name="userid" type="int">
+            <column name="userid" />
+            <generator class="assigned" />
+        </id>
+        <property name="baiduCount" type="java.lang.Integer">
+            <column name="baidu_count" />
+        </property>
+        <property name="sogouCount" type="java.lang.Integer">
+            <column name="sogou_count" />
+        </property>
+        <property name="youdaoCount" type="java.lang.Integer">
+            <column name="youdao_count" />
+        </property>
+        <property name="bingCount" type="java.lang.Integer">
+            <column name="bing_count" />
+        </property>
+        <property name="yahooCount" type="java.lang.Integer">
+            <column name="yahoo_count" />
+        </property>
+        <property name="query" type="string">
+            <column name="query" />
+        </property>
+        <property name="url" type="string">
+            <column name="url" />
+        </property>
+        <property name="abstr" type="string">
+            <column name="abstr" />
+        </property>
+        <property name="resultLocation" type="java.lang.Integer">
+            <column name="result_location" />
+        </property>
+    </class>
+</hibernate-mapping>

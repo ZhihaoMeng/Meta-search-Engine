@@ -1,0 +1,366 @@
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	margin:0 auto;
+	min-width: 1100px;
+}
+.mtable{  
+    table-layout:fixed;/* 只有定义了表格的布局算法为fixed，下面td的定义才能起作用。 */  
+}  
+.mtd{  
+    width:100%;  
+    word-break:keep-all;/* 不换行 */  
+    white-space:nowrap;/* 不换行 */  
+    overflow:hidden;/* 内容超出宽度时隐藏超出部分的内容 */  
+    size:10;
+    text-overflow:ellipsis;/* 当对象内文本溢出时显示省略标记(...) ；需与overflow:hidden;一起使用*/  
+}  
+#container{
+	width:800px;
+	margin:5px auto;
+}
+.item{
+	height: auto;
+	width:100%;
+	float: left;
+	margin-bottom: 10px;
+}
+.left_part{
+	font-family: "Times New Roman", Times, serif;
+	font-size: 12px;
+	font-weight: bold;
+	color: #000000;
+	clear: left;
+	float: left;
+	width: 10%;
+	overflow: hidden;
+	height: 100%;
+	text-align: center;
+	vertical-align: 10%;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	position: relative;
+}
+.left_num{
+	vertical-align: middle;
+	padding-top: 5px;
+	font-family: "Times New Roman", Times, serif;
+	font-size: 15px;
+	font-weight: bold;
+	text-align: center;
+}
+.main_part{
+	background-position: left center;
+	float: left;
+	height: 100%;
+	width: 70%;
+	position: relative;
+}
+.right_part{
+	text-align: center;
+	vertical-align: middle;
+	clear: right;
+	float: left;
+	height: 100%;
+	width: 20%;
+	position: relative;
+}
+.item_right_pdf {
+	background-position: center;
+	padding-top: 50%;
+	height: 19px;
+	width: 24px;
+}
+#container .item .right_part {
+	color: #1c4178;
+}
+.item_title{
+	line-height: 20px;
+	font-size: 18px;
+	color: #3e7dcd;
+
+}
+.item_author{
+	font-size: 14px;
+	color: #333333;
+	margin-top: 5px;
+}
+.item_abstr{
+	font-size: 14px;
+	color: #736d6f;
+	margin-top: 5px;
+	margin-bottom: 5px;
+
+}
+.item_msg{
+	font-size: 16px;
+	color: #333333;
+	font-weight: normal;
+}
+.item_source{
+	font-size: 14px;
+	margin-top: 5px;
+	color: #333333;
+
+}
+.item_source_name{
+	color: #3e7dcd;
+
+}
+.main_content{
+	min-width: 1200px;
+	overflow:scroll;
+	overflow-x:hidden;
+	overflow-y:hidden;	
+	display:block;
+	
+}
+.main_left{
+	min-width: 250px;
+	width:12%;
+	position: relative;
+	padding-left:10px;
+	padding-right:10px;
+	float:left;
+	clear:left;
+}
+.main_center{
+	clear:right;
+	float: left;
+	min-width: 700px;
+	width: 50%;
+	position: relative;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+.main_right{
+	float: left;
+	clear:right;
+	min-width: 200px;
+	width:15%;
+	position: relative;
+	margin-top: 10px;
+	margin-bottom: 3px;
+}
+.item_right_img{
+	width:24px;
+	height:19px;
+	margin-top:25%;
+}
+.copyright{
+	width:100%;
+	height:100px;
+	float: left;
+	clear: left;
+	text-align: center;
+	line-height:100px;
+}
+.page_areasetting{
+	height:100px;
+	margin-top:200px;
+	padding-left:20px;
+	
+	
+}
+.relate-search-item{
+	height:25px;
+	line-height:25px;
+}
+.relate-search-numberf{
+	background-color:#f26522;
+	display:inline-block;
+	color:#fff;
+	width:17px;
+	height:17px;
+	font-size:13px;
+	line-height:17px;
+	text-align:center;
+	vertical-align:top;
+	margin-top:4px;
+	margin-right:2px;
+}
+.relate-search-cite{
+	color:#666;
+	margin-left:10px;
+	font-size:13px;
+}
+.relate-search-citew{
+	height: 25px;
+	line-height: 25px;
+}
+.relate-search-word{
+	color:#333;
+	margin-left:10px;
+	font-size:13px;
+	width: 125px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	word-wrap: normal;  
+}
+.relate-search-numberl{
+	color:#f26522;
+	width:17px;
+	height:17px;
+	font-size:13px;
+	line-height:17px;
+	text-align:center;
+	vertical-align:top;
+	margin-top:4px;
+	display:inline-block;
+	margin-right:2px;
+}
+.option-btn{
+	text-align: center;
+	color: #666;
+	background: 0;
+	border: 1;
+	margin-left:5px;
+}
+.relate-opption{
+	font-size: 11px;
+	font-weight: 700;
+	font: inherit;
+}
+.relate-filt-year{
+	margin-bottom:10px;
+	margin-top:20px;
+}
+.relate-filt-year-navt{
+	color: #555;
+	height: 24px;
+	width:200px;
+	padding-left: 5px;
+	line-height: 24px;
+	font-size: 13px;
+	font-weight: bold;
+	background-color: #fff0e4;
+	padding-right: 4px;
+	margin-bottom: 5px;
+}
+.c-icon-arrow-up-gray{
+	float: right;
+	margin-top: 8px;
+	background-repeat: no-repeat;
+	display: inline-block;
+	width: 9px;
+	height: 5px;
+	vertical-align: text-bottom;
+	font-style: normal;
+	overflow: hidden;
+}
+.relate-filt-year-navc {
+	height: 129px;
+	overflow: hidden;
+	display: block;
+	
+}
+.leftnav_list_cont {
+	padding-bottom: 10px;
+}
+.leftnav_ylo{
+	font-family: Arial;
+	font-size: 13px;
+	line-height: 1.54;
+	word-wrap: break-word;
+}
+.leftnav_list_cont a{
+	color: #666;
+	display: block;
+	height: 24px;
+	line-height: 24px;
+	padding-left: 5px;
+	white-space: nowrap;
+	word-wrap: normal;
+}
+..leftnav_year_in {
+	margin-left: 6px;
+	color: #999;
+	display:block;
+}
+.sc-input {
+	height: 19px;
+	line-height: 19px;
+	width: 29px;
+}
+.leftnav_input_subspan {
+	padding: 0;
+	width: 35px;
+	height: 19px;
+	margin-left: 8px;
+	border: 1px solid #d8d8d8;
+	cursor: pointer;
+	font-family: inherit;
+	font-weight: normal;
+	text-align: center;
+	vertical-align: middle;
+	background-color: #f9f9f9;
+	overflow: hidden;
+	outline: 0;
+	line-height: 19px;
+	font-size: 13px;
+}
+.leftnav_input_sub {
+	color: #666;
+	cursor: pointer;
+}
+.sort-font{
+	font-size:13px;
+}
+.likeordislike {
+	float: right;
+	line-height: 14px;
+	font-size: 14px;
+	vertical-align: middle;
+}
+.likeordislike img {
+	height: 14px;
+	width: 14px;
+	margin-right: 4px;
+	line-height: 14px;
+}
+.rankarea{
+	font-size: 11px;
+	font-weight: 700;
+	font: inherit;
+	margin-top:20px;
+}
+.rankbox {
+	height:auto;
+	width: 60px;
+	border: thin solid #CCCCCC;
+	background-repeat: no-repeat;
+	text-align: center;
+	vertical-align: middle;
+	float: left;
+	margin-top:4px;
+	margin-right: 10px;
+	padding-right: 10px;
+	padding-left: 10px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	background-position: right bottom;
+	font-size: 13px;
+	color: #000;
+}
+.btn-img {
+	background-image: url(../images/rankbtn.png);
+	background-repeat: no-repeat;
+	background-color:#fff;
+	margin-top:10px;
+	width:86px;
+	height:30px;
+	overflow:hidden;
+	cursor:pointer;
+	border:0;
+}
+
+
+
+
+
+
+
+
+
+
+
+

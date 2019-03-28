@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2016-4-12 17:44:14 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="db.hibernate.tables.isearch.ClickSourcePreference" table="click_source_preference" catalog="isearch">
+        <id name="userid" type="int">
+            <column name="userid" />
+            <generator class="assigned" />
+        </id>
+        <property name="baiduPreference" type="java.lang.Double">
+            <column name="baidu_preference" precision="22" scale="0" />
+        </property>
+        <property name="sogouPreference" type="java.lang.Double">
+            <column name="sogou_preference" precision="22" scale="0" />
+        </property>
+        <property name="youdaoPreference" type="java.lang.Double">
+            <column name="youdao_preference" precision="22" scale="0" />
+        </property>
+        <property name="bingPreference" type="java.lang.Double">
+            <column name="bing_preference" precision="22" scale="0" />
+        </property>
+        <property name="yahooPreference" type="java.lang.Double">
+            <column name="yahoo_preference" precision="22" scale="0" />
+        </property>
+    </class>
+</hibernate-mapping>

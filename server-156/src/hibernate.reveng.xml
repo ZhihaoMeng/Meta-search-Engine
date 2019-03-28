@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-reverse-engineering PUBLIC "-//Hibernate/Hibernate Reverse Engineering DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-reverse-engineering-3.0.dtd" >
+
+<hibernate-reverse-engineering>
+  <table-filter match-catalog="isearch" match-name="category"/>
+  <table-filter match-catalog="isearch" match-name="cities"/>
+  <table-filter match-catalog="isearch" match-name="click_log"/>
+  <table-filter match-catalog="isearch" match-name="click_result_source"/>
+  <table-filter match-catalog="isearch" match-name="click_source_preference"/>
+  <table-filter match-catalog="isearch" match-name="company"/>
+  <table-filter match-catalog="isearch" match-name="group_info"/>
+  <table-filter match-catalog="isearch" match-name="group_to_category"/>
+  <table-filter match-catalog="isearch" match-name="hot_words"/>
+  <table-filter match-catalog="isearch" match-name="job"/>
+  <table-filter match-catalog="isearch" match-name="provinces"/>
+  <table-filter match-catalog="isearch" match-name="qfg_features"/>
+  <table-filter match-catalog="isearch" match-name="queries"/>
+  <table-filter match-catalog="isearch" match-name="user"/>
+  <table-filter match-catalog="isearch" match-name="user_cluster"/>
+  <table-filter match-catalog="isearch" match-name="user_favor_words"/>
+  <table-filter match-catalog="isearch" match-name="user_groups"/>
+  <table-filter match-catalog="isearch" match-name="user_info"/>
+  <table-filter match-catalog="isearch" match-name="user_interest_value"/>
+  <table-filter match-catalog="isearch" match-name="user_se_setting"/>
+</hibernate-reverse-engineering>

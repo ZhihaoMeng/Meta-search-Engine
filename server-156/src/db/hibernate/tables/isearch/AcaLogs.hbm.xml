@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2016-4-7 14:57:04 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="db.hibernate.tables.isearch.AcaLogs" table="aca_logs" catalog="isearch">
+        <id name="id" type="java.lang.Integer">
+            <column name="id" />
+            <generator class="identity" />
+        </id>
+        <property name="userid" type="string">
+            <column name="userid" length="45" />
+        </property>
+        <property name="query" type="string">
+            <column name="query" length="45" />
+        </property>
+        <property name="title" type="string">
+            <column name="title" length="45" />
+        </property>
+        <property name="authors" type="string">
+            <column name="authors" length="45" />
+        </property>
+        <property name="abstr" type="string">
+            <column name="abstr" length="45" />
+        </property>
+        <property name="link" type="string">
+            <column name="link" length="45" />
+        </property>
+        <property name="year" type="java.lang.Integer">
+            <column name="year" />
+        </property>
+        <property name="citecount" type="java.lang.Integer">
+            <column name="citecount" />
+        </property>
+        <property name="sources" type="string">
+            <column name="sources" length="45" />
+        </property>
+        <property name="score" type="java.lang.Double">
+            <column name="score" precision="22" scale="0" />
+        </property>
+    </class>
+</hibernate-mapping>

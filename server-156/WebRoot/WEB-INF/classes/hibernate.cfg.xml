@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+        <property name="hibernate.bytecode.use_reflection_optimizer">false</property>
+        <property name="hibernate.connection.characterEncoding">UTF-8</property>
+        <property name="hibernate.connection.driver_class">org.gjt.mm.mysql.Driver</property>
+        <property name="hibernate.connection.password">root</property>
+        <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/isearch</property>
+        <property name="hibernate.connection.useUnicode">true</property>
+        <property name="hibernate.connection.username">root</property>
+        <property name="hibernate.dialect">org.hibernate.dialect.MySQL5Dialect</property>
+        <property name="hibernate.search.autoregister_listeners">false</property>
+        <mapping resource="db/hibernate/tables/isearch/ClickLog.hbm.xml" />
+        <mapping resource="db/hibernate/tables/isearch/Job.hbm.xml" />
+        <mapping resource="db/hibernate/tables/isearch/UserInterestValue.hbm.xml" />
+        <mapping resource="db/hibernate/tables/isearch/Company.hbm.xml" />
+        <mapping resource="db/hibernate/tables/isearch/ClickResultSource.hbm.xml" />
+        <mapping resource="db/hibernate/tables/isearch/UserCluster.hbm.xml" />
+        <mapping resource="db/hibernate/tables/isearch/UserSeSetting.hbm.xml" />
+        <mapping resource="db/hibernate/tables/isearch/UserFavorWords.hbm.xml" />
+        <mapping resource="db/hibernate/tables/isearch/Category.hbm.xml" />
+        <mapping resource="db/hibernate/tables/isearch/User.hbm.xml" />
+        <mapping resource="db/hibernate/tables/isearch/UserInfo.hbm.xml" />
+        <mapping resource="db/hibernate/tables/isearch/ClickSourcePreference.hbm.xml" />
+        <mapping resource="db/hibernate/tables/isearch/GroupToCategory.hbm.xml" />
+        <mapping resource="db/hibernate/tables/isearch/Queries.hbm.xml" />
+        <mapping resource="db/hibernate/tables/isearch/GroupInfo.hbm.xml" />
+        <mapping resource="db/hibernate/tables/isearch/Cities.hbm.xml" />
+        <mapping resource="db/hibernate/tables/isearch/QfgFeatures.hbm.xml" />
+        <mapping resource="db/hibernate/tables/isearch/HotWords.hbm.xml" />
+        <mapping resource="db/hibernate/tables/isearch/Provinces.hbm.xml" />
+        <mapping resource="db/hibernate/tables/isearch/UserGroups.hbm.xml" />
+    </session-factory>
+</hibernate-configuration>

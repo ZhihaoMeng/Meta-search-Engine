@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2016-4-12 17:44:14 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="db.hibernate.tables.isearch.HotWords" table="hot_words" catalog="isearch">
+        <id name="hid" type="java.lang.Integer">
+            <column name="hid" />
+            <generator class="identity" />
+        </id>
+        <property name="hotwords" type="string">
+            <column name="hotwords" not-null="true" />
+        </property>
+        <property name="date" type="date">
+            <column name="date" length="0" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>
